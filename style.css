@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-
 .hero-section {
   background-image: url(./images/stefan-stefancik-6whwCHgsMiA-unsplash\ 1.png);
   background-repeat: no-repeat;
@@ -20,6 +19,9 @@
   display: flex;
   justify-content: space-between;
   padding: 2rem;
+}
+.pos-f-t {
+  display: none;
 }
 .logo {
   height: 3rem;
@@ -120,7 +122,6 @@
 
 .best-service-section {
   height: 60vh;
-  background-image: url(./images/Group\594\\(1\).png);
 }
 .best-service-text {
   padding-top: 40px;
@@ -136,12 +137,12 @@
   margin-right: 100px;
 }
 .best-service-card {
-  width: 150px; 
+  width: 150px;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center; 
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,11 +199,10 @@
   font-family: "open sans", serif;
 }
 
-
 .image-card {
   display: flex;
   align-items: center;
-  width: 400px; 
+  width: 400px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -210,14 +210,12 @@
   margin: 20px;
 }
 
-
 .image-section img {
-  width: 120px; 
+  width: 120px;
   height: auto;
   object-fit: cover;
-  border-radius: 8px 0 0 8px; 
+  border-radius: 8px 0 0 8px;
 }
-
 
 .text-section {
   padding: 20px;
@@ -249,7 +247,6 @@
   margin-bottom: 20px;
 }
 
-
 .category-buttons {
   display: flex;
   justify-content: center;
@@ -270,7 +267,6 @@
 .category.active {
   background-color: #28a745;
 }
-
 
 .packages {
   display: flex;
@@ -300,7 +296,6 @@
   padding: 15px;
 }
 
-
 .package-header {
   display: flex;
   justify-content: space-between;
@@ -315,7 +310,6 @@
   color: #666;
   margin-bottom: 15px;
 }
-
 
 .package-footer {
   display: flex;
@@ -338,7 +332,6 @@
   font-size: 12px;
   font-weight: 500;
 }
-
 
 .discover-more {
   background-color: #28a745;
@@ -484,7 +477,6 @@
   width: 84px;
 }
 
-
 .overlay-progress-card {
   position: absolute;
   bottom: 37px;
@@ -567,7 +559,7 @@ h1 {
 }
 
 .side-image.right {
-  right: -80px; 
+  right: -80px;
 }
 
 .side-image img {
@@ -587,7 +579,7 @@ h1 {
 
 .testimonial-bg {
   position: relative;
-  width: 100vw; 
+  width: 100vw;
   max-width: none;
   height: 400px;
   overflow: hidden;
@@ -652,7 +644,6 @@ h1 {
   font-weight: bold;
   margin-top: 10px;
 }
-
 
 .wrapper {
   display: flex;
@@ -788,4 +779,106 @@ Section styling .footer-section {
   font-size: 0.8em;
   color: #666;
   margin-top: 20px;
+}
+/* Mobile Responsiveness for iPhone and iPad */
+@media screen and (max-width: 600px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .logo {
+    height: 2rem;
+    margin-left: 2rem;
+  }
+  .navigation-list {
+    display: none;
+  }
+  .navigation-icons {
+    display: none;
+  }
+  .pos-f-t {
+    display: block;
+  }
+  .hero-content {
+    margin-top: 200px;
+    width: 400px;
+  }
+  .hero-heading {
+    font-weight: bold;
+    font-size: 40px;
+    color: #ffffff;
+  }
+  .hero-text p {
+    font-size: 12px;
+  }
+  .hero-btn {
+    padding: 12px;
+    background-color: #00a651;
+    color: #ffffff;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .service-section {
+    height: 90vh;
+  }
+  .service {
+    display: block;
+    padding: 20px 50px;
+  }
+  .service-card {
+    margin-bottom: 20px;
+  }
+  .best-service-section {
+    height: 130vh;
+  }
+
+  .best-service {
+    display: block;
+    justify-content: space-between;
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .best-service-card {
+    margin-bottom: 20px;
+  }
+  .popular-destination-card {
+    display: none;
+  }
+  .image-card {
+    width: 360px;
+  }
+  .text-section {
+    padding: 10px;
+  }
+  .category-buttons {
+    display: block;
+    margin-bottom: 50px;
+  }
+.packages {
+    display: block;
+}
+.package-card {
+    margin-bottom: 20px;
+
+}
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0px;
+}
+.subscription-box h2 {
+    font-size: 12px;
+}
+.footer-container{
+  display: none;
+}
+
+
+
+
 }
