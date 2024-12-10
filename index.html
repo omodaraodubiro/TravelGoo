@@ -28,28 +28,24 @@
             class="nav-icon"
           />
         </div>
-        <div class="pos-f-t">
-          <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-white p-4">
-              <div class="nav-list">Home</div>
-              <div class="nav-list">About</div>
-              <div class="nav-list">Package</div>
-            </div>
-          </div>
-          <nav class="navbar navbar-white" style="padding: 0px">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarToggleExternalContent"
-              aria-controls="navbarToggleExternalContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </nav>
-        </div>
+        <nav class="navbar">
+    <button
+      class="navbar-toggler"
+      id="hamburger"
+      type="button"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="menu" class="menu">
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+    </div>
+  </nav>
       </nav>
       <div class="hero-content">
         <h1 class="hero-heading">Your Imagination Is Your Only Limit</h1>
@@ -59,7 +55,8 @@
             facilities. Your Satisfaction is our main priority
           </p>
         </div>
-        <button class="hero-btn">Discover more</button>
+        <button class="hero-btn" id="myBtn">Discover more</button>
+        <p id="demo"></p>
       </div>
     </div>
 
@@ -485,5 +482,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
+    <script src="./script.js"></script>
   </body>
 </html>

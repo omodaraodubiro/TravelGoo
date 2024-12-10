@@ -20,9 +20,7 @@
   justify-content: space-between;
   padding: 2rem;
 }
-.pos-f-t {
-  display: none;
-}
+
 .logo {
   height: 3rem;
   margin-left: 8rem;
@@ -40,6 +38,13 @@
   display: flex;
   justify-content: space-between;
   padding-right: 60px;
+}
+
+.navbar-toggler{
+  display: none;
+}
+.menu ul{
+  display: none;
 }
 .nav-icon {
   width: 25px;
@@ -797,9 +802,53 @@ Section styling .footer-section {
   .navigation-icons {
     display: none;
   }
-  .pos-f-t {
-    display: block;
-  }
+  
+
+.menu ul{
+  display: inline;
+}
+
+/* Hamburger icon */
+.navbar-toggler {
+  display: flex;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  font-size: 24px;
+}
+
+/* Menu styling */
+.menu {
+  display: none; /* Hidden by default */
+ 
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  color: white;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+.menu ul li:hover {
+  color: #ffd700;
+  cursor: pointer;
+}
+
   .hero-content {
     margin-top: 200px;
     width: 400px;
@@ -844,6 +893,7 @@ Section styling .footer-section {
   }
   .best-service-card {
     margin-bottom: 20px;
+   
   }
   .popular-destination-card {
     display: none;
@@ -855,8 +905,16 @@ Section styling .footer-section {
     padding: 10px;
   }
   .category-buttons {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 50px;
+  }
+  .container {
+    height: 70vh;
+    padding: 50px;
+  }
+  .trip-card{
+    display: none;
   }
 .packages {
     display: block;
@@ -869,7 +927,7 @@ Section styling .footer-section {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding: 0px;
+    padding: 60px;
 }
 .subscription-box h2 {
     font-size: 12px;
